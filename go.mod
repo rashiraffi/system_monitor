@@ -1,6 +1,6 @@
-module github.com/rashiraffi/system_monitor.git
+module github.com/rashiraffi/system_monitor
 
-go 1.20
+go 1.19
 
 require (
 	github.com/mattn/go-sqlite3 v1.14.16

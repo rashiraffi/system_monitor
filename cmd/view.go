@@ -4,7 +4,7 @@ Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"github.com/rashiraffi/system_monitor.git/internal"
+	"github.com/rashiraffi/system_monitor/internal"
 	"github.com/spf13/cobra"
 )
 
