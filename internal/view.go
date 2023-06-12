@@ -79,7 +79,7 @@ func View() {
 	}
 
 	cpuTable := tablewriter.NewWriter(os.Stdout)
-	cpuTable.SetHeader([]string{"Threshold", "CPU Utilization"})
+	cpuTable.SetHeader([]string{"CPU Usage Threshold", "Percentage"})
 	for _, t := range threshold {
 		if tRange[t].cpuPercent > 0 {
 			cpuTable.Append([]string{fmt.Sprintf("%d%% ~ %d%%", t-10, t), fmt.Sprintf("%.2f%%", tRange[t].cpuPercent)})
@@ -89,7 +89,7 @@ func View() {
 	cpuTable.Render()
 
 	ramTable := tablewriter.NewWriter(os.Stdout)
-	ramTable.SetHeader([]string{"Threshold", "RAM Utilization"})
+	ramTable.SetHeader([]string{"RAM Usage Threshold", "Percentage"})
 	for _, t := range threshold {
 		if tRange[t].memPercent > 0 {
 			ramTable.Append([]string{fmt.Sprintf("%d%% ~ %d%%", t-10, t), fmt.Sprintf("%.2f%%", tRange[t].memPercent)})
